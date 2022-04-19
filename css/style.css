@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    font-size: 1em;
+}
+@media (max-width:768px) {
+    :root {
+        font-size: 0.8em;
+    }
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: white;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+/* Start Header */
+header {
+    background-color: #222222;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+header ul {
+    display: flex;
+    align-items: center;
+}
+header ul li:first-child {
+    margin-right: 1em;
+}
+
+header .lang li {
+    border: 1px solid gray;
+    padding: 0.2em;
+    position: relative;
+    overflow: hidden;
+}
+header .lang li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    transform: scale(0);
+    transition: 0.2s;
+    z-index: 1;
+}
+header .lang li:hover::before {
+    transform: scale(1);
+    background-color: rgba(163, 180, 255, 0.281);
+
+}
+header .lang li a {
+    position: relative;
+    z-index: 2;
+}
+.logo {
+    color: white;
+}
+.logo i {
+    color: #2c7fdd;
+}
+nav ul li {
+    position: relative;
+}
+nav > ul > li::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    background-color: #2c7fdd;
+    height: 2px;
+    left: 0;
+    bottom: -0.2em;
+    transform-origin: 0%;
+    transform: scaleX(0);
+    transition: 0.3s;
+}
+nav > ul > li:hover::after {
+    transform: scaleX(1);
+}
+.active {
+    color: #ddd;
+}
+/* End Header */
+/* Main */
+main {
+    color: black;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.filters {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    height:30px;
+    padding: 5px;
+    padding-bottom: 0;
+
+}
+.filters .sorting {
+    display: flex;
+    justify-content: center;
+}
+.filters .label {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+.sort .list {
+    visibility: hidden;
+    background-color: whitesmoke;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    box-shadow:
+    1.3px 0px 2.2px rgba(0, 0, 0, 0.006),
+    3.2px 0px 5.3px rgba(0, 0, 0, 0.008),
+    6px 0px 10px rgba(0, 0, 0, 0.01),
+    10.7px 0px 17.9px rgba(0, 0, 0, 0.012),
+    20.1px 0px 33.4px rgba(0, 0, 0, 0.014),
+    48px 0px 80px rgba(0, 0, 0, 0.02)
+  ;
+  border: 1px solid #ddd;
+}
+.sort .list.start {
+    transition: 0.3s;
+    transform: translateY(-10px);
+} 
+.sort .list li {
+    padding: 10px;
+    transition: background-color 0.1s;
+}
+.sort .list li a{
+    color: #222222;
+}
+.sort .list li:first-child {
+    border-bottom: 1px solid #ddd;
+
+}
+.sort .list li:hover {
+    background-color: #ddd;
+}
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 100%;
+}
+table td, table th {
+    padding: 3px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+table th {
+    border-bottom: 2px solid #ddd;
+    font-weight: 600;
+    padding: 10px;
+}
+tbody tr:nth-child(odd) td {
+    background-color: #F5F5F5;
+}
+.movie, .series, .amv {
+    background-color: #ffc289;
+    padding: 2px;
+    border-radius: 5px;
+}
+.series {
+    background-color: #89caff;
+}
+.amv {
+    background-color: #ff89ba;
+}
+.small {
+    font-size: 0.8rem;
+}
+tbody td img {
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+}
+table td img:hover {
+    transition: 0.1s;
+    filter: brightness(110%);
+}

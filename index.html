@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/my.framework.main.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="">
+          <i class="fa-solid fa-play"></i>
+          Anime Shorts
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="" class="active">List</a>
+          </li>
+          <li>
+            <a href="">People</a>
+          </li>
+
+          <ul class="lang">
+            <li><a href="">EN</a></li>
+            <li><a href="">AR</a></li>
+          </ul>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="all">
+    <div class="container">
+      <main>
+        <div class="filters">
+          <div class="upadate">
+            Updated 0 hours ago
+          </div>
+          <div class="sorting">
+            <ul class="sort">
+              <div class="label" onclick="show()">
+                <li>SORT</li>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div class="list" id="toShow">
+                <li><a href="">Recommended</a></li>
+                <li><a href="">Date</a></li>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Start Table -->
+        <table> 
+          <thead> 
+            <tr>
+              <th>Name</th> 
+              <th>Type</th> 
+              <th>Duration</th> 
+              <th>Links</th> 
+            </tr> 
+          </thead> 
+      <tbody>
+  
+      <tr>
+          <td>The house of small cubes</td>
+              <td><span class="movie">movie</span></td>
+              <td>10<span class="small">MIN</span></td>
+              <td>
+  
+      <a href=" https://myanimelist.net/anime/5365/Tsumiki_no_Ie" target="_blank">
+          <img src="img/mal.png" alt="">
+      </a>
+      
+      <a href=" https://anilist.co/anime/5365/Tsumiki-no-Ie" target="_blank">
+          <img src="img/anilist.png" alt="">
+      </a>
+      
+      <a href=" https://youtu.be/j0YSFvPTm2A
+" target="_blank">
+          <img src="img/youtube.png" alt="">
+      </a>
+      
+          </td>
+      </tr>
+      <tr>
+          <td>On your mark</td>
+              <td><span class="amv">amv</span></td>
+              <td>6<span class="small">MIN</span></td>
+              <td>
+  
+      <a href=" https://myanimelist.net/anime/1047/On_Your_Mark" target="_blank">
+          <img src="img/mal.png" alt="">
+      </a>
+      
+      <a href=" https://anilist.co/anime/1047/On-Your-Mark/
+" target="_blank">
+          <img src="img/anilist.png" alt="">
+      </a>
+      
+          </td>
+      </tr>
+      <tr>
+          <td>Heikousen</td>
+              <td><span class="amv">amv</span></td>
+              <td>5<span class="small">MIN</span></td>
+              <td>
+  
+      <a href=" https://myanimelist.net/anime/47402/Heikousen" target="_blank">
+          <img src="img/mal.png" alt="">
+      </a>
+      
+      <a href=" https://anilist.co/anime/129462/Heikousen/" target="_blank">
+          <img src="img/anilist.png" alt="">
+      </a>
+      
+      <a href=" https://youtu.be/lxw4Y8qzq4w
+" target="_blank">
+          <img src="img/youtube.png" alt="">
+      </a>
+      
+          </td>
+      </tr>
+      <tr>
+          <td>The ghiblies</td>
+              <td><span class="series">series</span></td>
+              <td>18x2<span class="small">MIN</span></td>
+              <td>
+  
+      <a href=" https://myanimelist.net/anime/2617/Ghiblies" target="_blank">
+          <img src="img/mal.png" alt="">
+      </a>
+      
+      <a href=" https://anilist.co/anime/2617/the-GHIBLIES/
+" target="_blank">
+          <img src="img/anilist.png" alt="">
+      </a>
+      
+          </td>
+      </tr>
+      <tr>
+          <td>Puparia</td>
+              <td><span class="movie">movie</span></td>
+              <td>3<span class="small">MIN</span></td>
+              <td>
+  
+      <a href=" https://myanimelist.net/anime/44059/Puparia?q=PUPARIA&cat=anime" target="_blank">
+          <img src="img/mal.png" alt="">
+      </a>
+      
+      <a href=" https://anilist.co/anime/126287/PUPARIA/" target="_blank">
+          <img src="img/anilist.png" alt="">
+      </a>
+      
+      <a href=" https://youtu.be/CWnqX41JHuM
+" target="_blank">
+          <img src="img/youtube.png" alt="">
+      </a>
+      
+          </td>
+      </tr>
+      <tr>
+          <td>Fragile</td>
+              <td><span class="movie">movie</span></td>
+              <td>3<span class="small">MIN</span></td>
+              <td>
+  
+      <a href=" https://anilist.co/anime/140026/Fragile/" target="_blank">
+          <img src="img/anilist.png" alt="">
+      </a>
+      
+      <a href=" https://www.youtube.com/watch?v=PunOjrJkTWk
+" target="_blank">
+          <img src="img/youtube.png" alt="">
+      </a>
+      
+          </td>
+      </tr>
+      <tr>
+          <td>Tomorrow's leaves</td>
+              <td><span class="movie">movie</span></td>
+              <td>8<span class="small">MIN</span></td>
+              <td>
+  
+      <a href=" https://myanimelist.net/anime/49467/Tomorrows_Leaves?q=tomorrow%27s&cat=anime" target="_blank">
+          <img src="img/mal.png" alt="">
+      </a>
+      
+      <a href=" https://anilist.co/anime/136706/Tomorrows-Leaves/" target="_blank">
+          <img src="img/anilist.png" alt="">
+      </a>
+      
+      <a href=" https://youtu.be/Ie_IkQtZyK4
+" target="_blank">
+          <img src="img/youtube.png" alt="">
+      </a>
+      
+          </td>
+      </tr>
+      <tr>
+          <td>The return</td>
+              <td><span class="movie">movie</span></td>
+              <td>5<span class="small">MIN</span></td>
+              <td>
+  
+      <a href=" https://anilist.co/anime/140343/The-Return/" target="_blank">
+          <img src="img/anilist.png" alt="">
+      </a>
+      
+      <a href=" https://youtu.be/VNOuW7nHygs
+" target="_blank">
+          <img src="img/youtube.png" alt="">
+      </a>
+      
+          </td>
+      </tr>
+      <tr>
+          <td>Pupa</td>
+              <td><span class="movie">movie</span></td>
+              <td>3<span class="small">MIN</span></td>
+              <td>
+  
+      <a href=" https://myanimelist.net/anime/50302/Pupa_Movie" target="_blank">
+          <img src="img/mal.png" alt="">
+      </a>
+      
+      <a href=" https://anilist.co/anime/140361/Pupa-2021/" target="_blank">
+          <img src="img/anilist.png" alt="">
+      </a>
+      
+      <a href=" https://youtu.be/O-a10mYpdp8
+" target="_blank">
+          <img src="img/youtube.png" alt="">
+      </a>
+      
+          </td>
+      </tr>
+      <tr>
+          <td>Neo tokyo</td>
+              <td><span class="series">series</span></td>
+              <td>16x3<span class="small">MIN</span></td>
+              <td>
+  
+      <a href=" https://myanimelist.net/anime/1951/Manie-Manie__Meikyuu_Monogatari" target="_blank">
+          <img src="img/mal.png" alt="">
+      </a>
+      
+      <a href=" https://anilist.co/anime/1951/Neo-Tokyo/
+" target="_blank">
+          <img src="img/anilist.png" alt="">
+      </a>
+      
+          </td>
+      </tr>
+      <tr>
+          <td>Anikuri15</td>
+              <td><span class="series">series</span></td>
+              <td>1x15<span class="small">MIN</span></td>
+              <td>
+  
+      <a href=" https://myanimelist.net/anime/2832/AniKuri15?q=anikuri&cat=anime" target="_blank">
+          <img src="img/mal.png" alt="">
+      </a>
+      
+      <a href=" https://anilist.co/anime/2832/AniKuri15/
+" target="_blank">
+          <img src="img/anilist.png" alt="">
+      </a>
+      
+          </td>
+      </tr>
+      <tr>
+          <td>Darken</td>
+              <td><span class="amv">amv</span></td>
+              <td>4<span class="small">MIN</span></td>
+              <td>
+  
+      <a href=" https://myanimelist.net/anime/50037/Kuraku_Kuroku?q=DARKEN&cat=anime" target="_blank">
+          <img src="img/mal.png" alt="">
+      </a>
+      
+      <a href=" https://anilist.co/anime/128752/DARKEN/" target="_blank">
+          <img src="img/anilist.png" alt="">
+      </a>
+      
+      <a href=" https://youtu.be/dcOwj-QE_ZE" target="_blank">
+          <img src="img/youtube.png" alt="">
+      </a>
+      
+          </td>
+      </tr>
+  </tbody>
+  </table>
+        <!-- End Table -->
+
+      </main>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
