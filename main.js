@@ -12,3 +12,21 @@ function show() {
     ul.classList.remove("start");
   }
 }
+let nav = document.getElementById("navbar");
+let menuVisible = false;
+function menu() {
+  if (menuVisible == false) {
+    nav.style.visibility = "visible";
+    menuVisible = true;
+    nav.classList.add("nav-animation");
+    document.getElementById("bar").classList.remove("fa", "fa-bars");
+    document.getElementById("bar").classList.add("fa-x",  "fa-solid");
+  }
+  else {
+    nav.style.visibility = "hidden";
+    menuVisible = false;
+    nav.classList.remove("nav-animation");
+    document.getElementById("bar").classList.remove("fa-x",  "fa-solid");
+    document.getElementById("bar").classList.add("fa", "fa-bars");
+  }
+}
