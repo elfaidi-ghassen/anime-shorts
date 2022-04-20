@@ -199,6 +199,9 @@ main {
 .update {
         white-space: nowrap;
 }
+ul.sort {
+    padding-inline-start: 0;
+}
 .filters .sorting {
     display: flex;
     justify-content: center;
